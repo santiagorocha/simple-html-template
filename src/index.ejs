@@ -12,7 +12,16 @@
 
 <!-- Код для примера -->
 <header class="header">
-    <h1>Hello world</h1>
+    <% const menu = ['LISP', 'OCaml', 'JavaScript', 'Python', 'PHP'] %>
+    <nav class="menu">
+        <ul class="menu__list">
+            <% menu.forEach(function(item) { %>
+            <li class="menu__item">
+                <a href="#" class="menu__link"><%= item %></a>
+            </li>
+            <% }); %>
+        </ul>
+    </nav>
 </header>
 
 <img src="img/pic.png" alt="">
