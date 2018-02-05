@@ -6,100 +6,204 @@
 /* {
     border: 1px solid red !important;
 }*/
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+}
 body {
     background: white;
     margin: auto;
 }
-
-#header{
+.wrapper{
+    width: auto;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}  
+.header{
     background: white;
     width: 100%;
     height: 96px;
-
 }
-
-
-.container{
-    width: 960px;
-    margin: 0 auto;
-}
-
-.logo-text{
-    align-content: left;
+.logo{
     width: 104px;
     float: left;
-    padding: 35px 216px 0px 0px;
-    
+    margin: 35px 0;
 }
-
-.oggetto_logo{
+.logo-oggetto{
     width: 49px;
     float: left;
-    padding: 19px 135px 0px 135px;
-
+    margin: 19px 0;
+    
 }
-
 .phone{
-    font-size: 24px;
-    font-family: roboto;
-    color: #cc0000;
     float: right;
-    padding-top: 34px;
-}
+    margin: 34px 0;
 
-#nav{
+    &__number{
+        font-size: 24px;
+        color: #cc0000;
+        margin: 0;
+        font-weight: 700;
+    }
+}
+.nav {
     background:#f2f2ed;
     width: 100%;
+    border: 1px solid #d9d9d4;
+    height: 49px;
+}
+.menu {
+    padding: 0;
+    float: left;
+
+    @media @desktop, @tablet, @phone {
+        &__item {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 16px;
+            color: #cc0000;
+            padding: 5px;
+            padding-left: 0;
+            margin-top: 14px;
+        }
+    }
+    
+}
+.searchbox{
+    float: right;
+    padding: 0;
+
+    @media @tablet {
+        &__text{ 
+            margin-top: 6px;
+            border: 1px solid #d9d9d4;
+            border-right: none;
+            width: 287px;
+            height: 38px;
+        }
+        &__bn{
+            float: right;
+            width: 38px;
+            height: 38px;
+            margin-top: 6px;
+            background: white;
+            border: 1px solid #d9d9d4;
+            border-left: none;
+            cursor: pointer;
+            color: #d9d9d4;
+        }
+    }
+    @media @desktop {
+        &__text{ 
+            margin-top: 6px;
+            border: 1px solid #d9d9d4;
+            border-right: none;
+            width: 287px;
+            height: 38px;
+        }
+        &__bn{
+            float: right;
+            width: 38px;
+            height: 38px;
+            margin-top: 6px;
+            background: white;
+            border: 1px solid #d9d9d4;
+            border-left: none;
+            cursor: pointer;
+            color: #d9d9d4;
+        }
+    }
+
+    @media @phone{
+        &__text{ 
+            margin-top: 6px;
+            border: 1px solid #d9d9d4;
+            border-right: none;
+            width: 287px;
+            height: 38px;
+        }
+        &__bn{
+            float: right;
+            width: 38px;
+            height: 38px;
+            margin-top: 6px;
+            background: white;
+            border: 1px solid #d9d9d4;
+            border-left: none;
+            cursor: pointer;
+            color: #d9d9d4;
+        }
+    }
+  
+}
+.prod{
 }
 
-#nav p{
-    display: inline-block;
-    font-size: 16px;
-    font-family: roboto;
-    color: black;
-}
-
-#nav a{
-    display: inline-block;
-    font-size: 16px;
-    font-family: roboto;
-    color: #cc0000;
-    padding: 5px;
-}
-
-#footer {
+.footer {
     background: #f2f2ed;
     width: 100%;
     height: 429px;
+    border: 1px solid #d9d9d4;
 }
-.menu {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: red;
 
-    // Стили для всех девайсов пишутся внитри блока:
-    @media @tablet {
-        background: green;
+.service {
+    float: left;
+    margin-top: 61px;
+    &__tl{
+        font-weight: 700;
+        font-size: 16px;
+        color: black;
+        margin: 0;
     }
-
-    @media @desktop {
-        background: blue;
+    &__list{
+        float: left;
+        margin-top: 24px;
+        margin-right: 54px;
+        margin-left: 0;
+        padding: 0;
     }
-
-    // Пример стилей для элемента `.menu__item`
     &__item {
-        display: inline-block;
-        list-style-type: none;
+        list-style: none;
+        font-size: 14px;
+        color: black;
+        padding-bottom: 5px;
     }
 
-    // Пример модификатора `.menu_bottom`
-    &_bottom {
-        background: green;
+    &__item a{
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+    }
+}
+
+.aboutus {
+    float: left;
+    margin-top: 61px;
+    &__tl{
+        font-weight: 700;
+        font-size: 16px;
+        color: black;
+        margin: 0;
+    }
+    &__list{
+        float: left;
+        margin-top: 24px;
+        margin-right: 54px;
+        margin-left: 0;
+        padding: 0;
+    }
+    &__item {
+        list-style: none;
+        padding-bottom: 5px;
     }
 
-    // Пример переопределения стилей элемента в нижнем меню `.menu_bottom .menu__item`
-    &_bottom &__item {
-        color: #f00;
+    &__item a{
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
     }
 }

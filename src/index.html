@@ -7,38 +7,128 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>7h3 5h0p</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
-<header id="header">
-    <div class="container">
-        <div class="logo-text">
-            <a href="index.html"><img src="img/the_shop_logo.svg" alt="logo-text"></img></a>
+<header class="header">
+    <div class="header__c wrapper">
+        <div class="logo">
+            <a class="logo__link" href="index.html">
+                <img class="logo__img" src="img/the_shop_logo.svg" alt="the shop">
+            </a>
         </div>
-        <div class="oggetto_logo">
-                <a href="index.html"><img src="img/oggetto_logo.svg" alt="Oggetto-logo"></img></a>
+        <div class="logo-oggetto">
+                <a class ="logo-oggetto__link" href="index.html">
+                    <img class ="logo-oggetto_img" src="img/oggetto_logo.svg" alt="logo oggetto">
+                 </a>
         </div>
-        <div class="phone"><b>+7 938 1563308</b></div>
+        <div class="phone">
+            <p class="phone__number">+7 938 1563308</p>
+        </div>
     </div>
 </header>
 
-<nav id="nav">
-    <div class="container">
-        <p><b>LISP</b></p>
-        <a href="#">OCaml</a>
-        <a href="#">JavaScript</a>
-        <a href="#">Phyton</a>
-        <a href="#">PHP</a>
+<nav class="nav">
+    <div class="nav__c wrapper">
+        <div class="menu">
+            <a class=menu__item href="#">LISP</a>
+            <a class=menu__item href="#">OCaml</a>
+            <a class=menu__item href="#">JavaScript</a>
+            <a class=menu__item href="#">Phyton</a>
+            <a class=menu__item href="#">PHP</a>
+        </div>
+        <div class="searchbox">
+            <input class="searchbox__text" type="text" placeholder="">
+            <button class="searchbox__bn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
     </div>
 </nav>
 
-<div class="container">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+<div class="main">
+    <div class="main__c wrapper">
+    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. 
+    </div>
 </div>
 
-<footer id="footer">
-    <div class="container">
-        <p>This is the footer</p>
+<footer class="footer">
+    <div class="footer__c wrapper">
+        <div class="service">
+            <p class="service__tl">Сервис и поддержка</p>
+            <ul class="service__list">
+                <li class="service__item">
+                    <a href="#">Как сделать заказ</a>
+                </li>
+                <li class="service__item">
+                    <a href="#">Возврат товара</a>
+                </li>
+                <li class="service__item">
+                    <a href="#">Возврат товара</a>
+                </li>
+                <li class="service__item">
+                    <a href="#">Публичная оферта</a>
+                </li>
+                <li class="service__item">
+                    <a href="#">Доставка</a>
+                </li>  
+                </ul>
+            <ul class="service__list">
+                    <li class="service__item">
+                        <a href="#">Способы оплаты</a>
+                    </li>
+                    <li class="service__item">
+                        <a href="#">Правила продажи</a> 
+                    </li>
+                    <li class="service__item">
+                        <a href="#">Возврат денежных средств</a>
+                    </li>
+                    <li class="service__item">
+                        <a href="#">Вопросы и ответы</a>
+                    </li>
+                    <li class="service__item">
+                        <a href="#">Доставка</a>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="aboutus">
+            <p class="aboutus__tl">О компании</p>
+            <ul class="aboutus__list">
+                <li class="aboutus__item">
+                    <a href="#">О нас   </a>
+                </li>
+                <li class="aboutus__item">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="aboutus__item">
+                    <a href="#">Вакансии</a>
+                </li>
+                <li class="aboutus__item">
+                    <a href="#">Партнерам</a>
+                </li>
+            </ul>
+            <ul class="aboutus__list">
+                    <li class="aboutus__item">
+                        <a href="#">Сертификаты</a>
+                    </li>
+                    <li class="aboutus__item">
+                        <a href="#">Преимущества</a> 
+                    </li>
+                    <li class="aboutus__item">
+                        <a href="#">Наши скидки</a>
+                    </li>
+            </ul>
+        </div>
+
+        <div class="promo">
+            <div class="promo__item">
+                <img src="img/delivery.svg" alt="">
+                <p>бесплатная доставка от 4000 ₽</p>
+            </div>
+        </div>
     </div>
 </footer>
     
